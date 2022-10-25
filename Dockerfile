@@ -1,6 +1,6 @@
 FROM python:3.8
 
-# dossier de travail
+# dossier de travail.
 WORKDIR /code
 
 # dependances
