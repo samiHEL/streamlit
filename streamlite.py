@@ -7,11 +7,10 @@ import seaborn
 import matplotlib.pyplot as plot
 from datetime import datetime
 
-
+st.title('Qu est ce qui definie l attractivité sur une appli de rencontre ?')
 data = pd.read_csv('lovoo_v3_users_api-results.csv')
 #import data
 data
-
 
 # 1/
 df = pd.DataFrame(data=data, columns=['counts_kisses','counts_profileVisits'])
@@ -59,21 +58,21 @@ fig=seaborn.relplot(x=df["counts_pictures"], y=df["counts_kisses"],kind='line',h
 st.pyplot(fig)
 
 # #7/
-# print("probleme")
+
 # df = pd.DataFrame(data=data, columns=['counts_profileVisits','counts_pictures'])
 # df["counts_pictures"].replace({0: "peu", 1: "peu",2: "peu",3: "beaucoup",4:"beaucoup",5: "beaucoup",6:"beaucoup",7: "beaucoup",8:"beaucoup",9: "beaucoup",10:"beaucoup",11: "beaucoup",12:"beaucoup",13: "beaucoup",14:"beaucoup",15: "beaucoup",16:"beaucoup",17: "beaucoup",18:"beaucoup",19: "beaucoup",20:"beaucoup",21: "beaucoup",22:"beaucoup",23: "beaucoup",24:"beaucoup",25: "beaucoup",26:"beaucoup",27: "beaucoup",28:"beaucoup",29: "beaucoup",30:"beaucoup"}, inplace=True)
-# fig=seaborn.boxplot(data=df, x="counts_profileVisits", y="counts_pictures",showfliers=False)
+# fig=seaborn.boxplot(x=df["counts_profileVisits"], y=df["counts_pictures"],showfliers=False)
 # st.pyplot(fig)
 
 
 # #8/
-# df = pd.DataFrame(data=data, columns=['counts_kisses','verified'])
-# fig=seaborn.boxplot(data=df, x="verified", y="counts_kisses",showfliers=False)
-# st.pyplot(fig)
+df = pd.DataFrame(data=data, columns=['counts_kisses','verified'])
+fig=seaborn.catplot(x="verified", y="counts_kisses",data= df,showfliers=False,kind='box')
+st.pyplot(fig)
 
 #9/
 df = pd.DataFrame(data=data, columns=['counts_details','counts_kisses'])
-fig=seaborn.relplot(x=df["counts_details"], y=df["counts_kisses"],kind='line',height=10)
+fig=seaborn.relplot(x="counts_details", y="counts_kisses",data= df,kind='line',height=10)
 st.pyplot(fig)
 
 #10/
