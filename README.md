@@ -18,17 +18,17 @@ A list of technologies used within the project(first look requirements.txt):
 ***
 Introduction to docker:
 
--Docker makes it possible to set up an efficient application deployment system, in a way that is adaptable to any server.Prepare easy-to-deploy development environments using containers.
--We orchestrate our containers (docker image) with docker compose and we create an image with the Dockerfile.
--An executable image built from a text file (Dockerfile) that contains precise instructions (like a blueprint) for making containers in series.
--docker-compose.yaml → operation of several containers together.
+-> Docker makes it possible to set up an efficient application deployment system, in a way that is adaptable to any server.Prepare easy-to-deploy development environments using containers.
+-> We orchestrate our containers (docker image) with docker compose and we create an image with the Dockerfile.
+-> An executable image built from a text file (Dockerfile) that contains precise instructions (like a blueprint) for making containers in series.
+-> docker-compose.yaml → operation of several containers together.
 
 Advantage:
 
--New lighter virtualization system → containers.
--Shares resources with the host system.
--Only works with Linux
--Starts up quickly.
+-> New lighter virtualization system → containers.
+-> Shares resources with the host system.
+-> Only works with Linux
+-> Starts up quickly.
 
 Basic docker command:
 https://stockagesami.blob.core.windows.net/conteneur-1/dockercheatsheet8.png
