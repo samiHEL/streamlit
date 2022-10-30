@@ -16,6 +16,9 @@ A list of technologies used within the project(first look requirements.txt):
 * [Docker](https://www.docker.com/)
 ## Installation
 ***
-A form for the docker container
+Introduction to docker:
 
-https://docs.google.com/document/d/1uzuFR-DPz2y7w34RoeQ0CWRaMnaBMKSg1G2rJ01kTkc/edit?usp=sharing
+Exemple de dockerfile:
+https://stockagesami.blob.core.windows.net/conteneur-1/Capture%20d%E2%80%99%C3%A9cran%20du%202022-10-30%2014-32-38.png
+
+
